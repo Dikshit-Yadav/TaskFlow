@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4F46E5;
+    --primary-hover: #4338CA;
+
+    --secondary-color: #F9FAFB;
+
+    --success-color: #10B981;
+    --danger-color: #EF4444;
+    --warning-color: #F59E0B;
+
+    --text-color: #111827;
+    --text-light: #6B7280;
+
+    --border-color: #E5E7EB;
+
+    --white: #FFFFFF;
+
+    --shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+    --radius: 10px;
+
+    --transition: .3s ease;
+}
+
+   Base Styles
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #F5F7FA;
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+    font-family: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
