@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | TaskFlow</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/auth.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <div class="auth-container">
+        <div class="auth-left">
+            <form id="registerForm" novalidate>
+
+                <!-- Full Name -->
+                <div class="input-group">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name"
+                        autocomplete="name">
+
+                    <small class="error" id="fullNameError">
+                    </small>
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email">
+
+                    <small class="error" id="emailError">
+                    </small>
+
+                </div>
+
+                <!-- Password -->
+
+                <div class="input-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="password-wrapper">
+
+                        <input type="password" id="password" name="password" placeholder="Create a password">
+
+                        <button type="button" class="toggle-password">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                    <small class="error" id="passwordError">
+                    </small>
+
+                </div>
+
+                <!-- Confirm Password -->
+
+                <div class="input-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <div class="password-wrapper">
+
+                        <input type="password" id="confirmPassword" name="confirmPassword"
+                            placeholder="Confirm your password">
+
+                        <button type="button" class="toggle-password">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                    <small class="error" id="confirmPasswordError">
+                    </small>
+
+                </div>
+
+                <!-- Terms -->
+
+                <div class="options">
+
+                    <label class="remember">
+
+                        <input type="checkbox" id="terms">
+
+                        I agree to the Terms & Conditions
+
+                    </label>
+                    <small class="error" id="termsError"></small>
+
+                </div>
+
+                <button type="submit" class="btn-login">
+
+                    Create Account
+
+                </button>
+
+                <p class="register-link">
+
+                    Already have an account?
+
+                    <a href="login.html">
+                        Login
+                    </a>
+
+                </p>
+
+            </form>
+        </div>
+        <div class="auth-right">
+
+            <div class="hero-content">
+
+                <i class="fa-solid fa-list-check hero-icon"></i>
+
+                <h2>Organize Everything</h2>
+
+                <p>
+
+                    Manage tasks, projects, deadlines,
+                    and productivity in one place.
+
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+
+    <script src="./js/validation.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/auth.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+
+</html>

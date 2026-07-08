@@ -81,3 +81,67 @@ Completed
 ### Next Feature
 
 Register Page
+---
+
+## Day 2
+
+### Date
+2026-07-08
+
+### Goal
+Build a modern register page with client-side validation using jQuery.
+
+### Completed
+
+#### UI
+- Created responsive register page layout
+- Added branding section
+- Added register form
+- Added social login buttons (UI only)
+- Added register link
+- Added forgot password link
+
+#### Features
+- Implemented show/hide password
+- Added reusable email validation
+- Added reusable password validation
+- Added reusable UI helper functions
+- Implemented live validation
+- Added validation success/error states
+
+#### Code Structure
+- validation.js
+    - isValidEmail()
+    - isValidPassword()
+    - isValidName()
+    - passwordsMatch()
+
+- ui.js
+    - showError()
+    - showSuccess()
+    - clearValidation()
+
+- auth.js
+    - Password toggle
+    - Register form handling
+    - Live validation
+
+### Tested
+
+✔ Password Toggle
+
+✔ Email Validation
+
+✔ Password Validation
+
+✔ Live Validation
+
+✔ Form Submission
+
+### Status
+
+Completed
+
+### Next Feature
+
+Dashboard Page

@@ -1,9 +1,26 @@
+function togglePassword() {
+
+    const wrapper = $(this).closest(".password-wrapper");
+
+    const input = wrapper.find("input");
+
+    const icon = $(this).find("i");
+
+    const isHidden = input.attr("type") === "password";
+
+    input.attr("type", isHidden ? "text" : "password");
+
+    icon.toggleClass("fa-eye fa-eye-slash");
+}
+
 function validateEmailField() {
+
     const email = $("#email").val().trim();
 
     clearValidation("#email", "#emailError");
 
     if (email === "") {
+
         showError(
             "#email",
             "#emailError",
@@ -12,28 +29,34 @@ function validateEmailField() {
 
         return false;
     }
-    else if (!isValidEmail(email)) {
+
+    if (!isValidEmail(email)) {
+
         showError(
             "#email",
             "#emailError",
-            "enter a valid email address."
+            "Enter a valid email address."
         );
+
         return false;
     }
-    else {
-        showSuccess(
-            "#email",
-            "#emailError",
-        )
-        return true;
-    }
+
+    showSuccess(
+        "#email",
+        "#emailError"
+    );
+
+    return true;
 }
 
 function validatePasswordField() {
 
     const password = $("#password").val().trim();
 
-    clearValidation("#password", "#passwordError");
+    clearValidation(
+        "#password",
+        "#passwordError"
+    );
 
     if (password === "") {
 
@@ -45,7 +68,8 @@ function validatePasswordField() {
 
         return false;
     }
-    else if (!isValidPassword(password)) {
+
+    if (!isValidPassword(password)) {
 
         showError(
             "#password",
@@ -55,53 +79,11 @@ function validatePasswordField() {
 
         return false;
     }
-    else {
 
-        showSuccess(
-            "#password",
-            "#passwordError"
-        );
-        return true;
-    }
+    showSuccess(
+        "#password",
+        "#passwordError"
+    );
+
+    return true;
 }
-
-$(document).ready(function () {
-    console.log("Auth Page Loaded");
-
-    $("#togglePassword").click(function () {
-        const password = $("#password");
-        const icon = $(this).find("i");
-
-        if (password.attr("type") === "password") {
-            password.attr("type", "text");
-            icon.removeClass("fa-eye").addClass("fa-eye-slash");
-
-        }
-        else {
-            password.attr("type", "password");
-            icon.removeClass("fa-eye-slash").addClass("fa-eye");
-        }
-    });
-
-    $("#loginForm").submit(function (e) {
-
-        e.preventDefault();
-
-        const isEmailValid = validateEmailField();
-        const isPasswordValid = validatePasswordField();
-
-        if (!isEmailValid || !isPasswordValid) {
-            return;
-        }
-
-        console.log("Login Successful!");
-    });
-
-    $("#email").on("input blur", function(){
-        validateEmailField();
-    });
-
-    $("#password").on("input blur", function(){
-        validatePasswordField();
-    });
-});
