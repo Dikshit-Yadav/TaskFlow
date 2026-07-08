@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | TaskFlow</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="./css/style.css">
+
+    <link rel="stylesheet"
+          href="./css/dashboard.css">
+
+    <link rel="stylesheet"
+          href="./css/responsive.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <span>TaskFlow</span>
+
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li class="active">
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-house"></i>
+
+                            Dashboard
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-list"></i>
+
+                            My Tasks
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-folder"></i>
+
+                            Projects
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-calendar"></i>
+
+                            Calendar
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">
+
+                            <i class="fa-solid fa-gear"></i>
+
+                            Settings
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="login.html">
+
+                            <i class="fa-solid fa-right-from-bracket"></i>
+
+                            Logout
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </aside>
+
+        <!-- Main -->
+
+        <main class="main-content">
+
+            <!-- Header -->
+
+            <header class="topbar">
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        placeholder="Search tasks...">
+
+                </div>
+
+                <div class="header-actions">
+
+                    <button id="notificationBtn">
+
+                        <i class="fa-solid fa-bell"></i>
+
+                    </button>
+
+                    <button id="themeBtn">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                    <div class="profile">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <span>Dikshit</span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- Dashboard Content -->
+
+            <section class="content">
+
+                <h1>
+
+                    Welcome Back 👋
+
+                </h1>
+
+                <p>
+
+                    Let's make today productive.
+
+                </p>
+
+                <div class="stats">
+
+                    <div class="card">
+
+                        <h3>Total Tasks</h3>
+
+                        <h2>25</h2>
+
+                    </div>
+
+                    <div class="card">
+
+                        <h3>Completed</h3>
+
+                        <h2>18</h2>
+
+                    </div>
+
+                    <div class="card">
+
+                        <h3>Pending</h3>
+
+                        <h2>7</h2>
+
+                    </div>
+
+                </div>
+
+                <div class="tasks">
+
+                    <h2>
+
+                        Today's Tasks
+
+                    </h2>
+
+                    <p>
+
+                        Task list will be added in the next phase.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="./js/dashboard.js"></script>
+
+</body>
+
+</html>

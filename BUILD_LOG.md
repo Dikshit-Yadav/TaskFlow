@@ -24,7 +24,7 @@ Build the Login Page UI.
 
 ---
 
-## Feature 01 - Login Page UI & Client-Side Validation
+## Feature - Login Page UI & Client-Side Validation
 
 ### Goal
 Build a modern login page with client-side validation using jQuery.
