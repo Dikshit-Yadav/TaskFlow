@@ -43,7 +43,7 @@
     color: #cbd5e1;
     padding: 14px 16px;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: .25s ease;
 }
 
 .sidebar a:hover {
@@ -68,7 +68,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
 }
 
 .search-box input {
@@ -131,7 +131,7 @@
     display: grid;
 
     grid-template-columns:
-        repeat(auto-fit, minmax(220px,1fr));
+        repeat(auto-fit, minmax(220px, 1fr));
 
     gap: 20px;
 }
@@ -140,7 +140,7 @@
     background: white;
     padding: 24px;
     border-radius: 14px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
     transition: .3s;
 }
 
@@ -164,9 +164,70 @@
     background: white;
     border-radius: 14px;
     padding: 25px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .08);
 }
 
 .tasks h2 {
     margin-bottom: 10px;
+}
+
+body.dark {
+
+    background: #0f172a;
+
+}
+
+body.dark .sidebar {
+
+    background: #020617;
+
+}
+
+body.dark .topbar {
+
+    background: #1e293b;
+
+    color: white;
+
+}
+
+body.dark .search-box input {
+
+    background: #334155;
+
+    border-color: #475569;
+
+    color: white;
+
+}
+
+body.dark .content h1,
+body.dark .content p,
+body.dark .profile {
+
+    color: white;
+
+}
+
+body.dark .card,
+body.dark .tasks {
+
+    background: #1e293b;
+
+    color: white;
+
+}
+
+body.dark .header-actions button {
+
+    background: #334155;
+
+    color: white;
+
+}
+
+body.dark .header-actions button:hover {
+
+    background: #2563eb;
+
 }
